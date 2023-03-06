@@ -1,0 +1,2 @@
+class SolutionPoint < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class LangPoint < ApplicationRecord
+end

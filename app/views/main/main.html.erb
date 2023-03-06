@@ -1,0 +1,19 @@
+<h1>Code Golf Spy</h1>
+
+Updated Solution DB: <%= time_ago_in_words(Time.at(@global.time_update)) %> ago
+<br>
+
+<% if Time.now - Time.at(@global.time_update) > 1.hour %>
+<%= button_to "Click for frEe rObUx!!111!!11!!11!", update_main_page_path(), method: :put %>
+<% end %>
+
+<%= form_with(url: query_login_page_path(), method: :put, remote: true) do |form| %>
+  <div>
+    <%= form.label :login, style: "display: block" %>
+    <%= form.text_field :login %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
